@@ -1,0 +1,8 @@
+*{
+    margin:10px;    /* resetar margens do navegador*/
+    padding:10px;   /* resetar espaços */
+}
+body{
+    background-color:#cdcdcd; /* cor do fundo da pagina*/
+    background-image: linear-gradient(to right,#c4c2c2,#c1bebe);
+}

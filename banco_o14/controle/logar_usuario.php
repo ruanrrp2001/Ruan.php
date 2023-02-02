@@ -13,7 +13,7 @@ try{
         $usuario = $row['nome_usuario'];
         $senha = $row['senha'];
     }
-    if($usuario == $user and $pass == md5($senha)) {`
+    if($usuario == $user and $pass == md5($senha)) {
     $_SESSION['usuario'] = $user;
     $_SESSION['senha'] = $pass;
     echo'
@@ -23,11 +23,15 @@ try{
     </script>
     ';
     } else {
-        unset ($_session['$user'];
-        unset ($_session['$user'];
-        echo "usuario ou senha incorretos, <a href='../formulario/logar_usuario.php'>tente novamente</a>;
+        unset ($_SESSION['$user']);
+        unset ($_SESSION['$pass']);
+        echo '<script'
+        alert("Acesso não liberado, tente novamente!");
+        window.location.herf = "../formulario/loguin.php";
+        </script>
+        ';
 }
     }catch(PDOException $ex_){
-        echo 'erro'.$ex_->getMenssage();
+        echo 'Erro'.$ex_->getMenssage();
     }
     ?>
